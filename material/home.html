@@ -1,0 +1,41 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Растянутое видео</title>
+      <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+        video {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="img\video\videoplayback.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
+
